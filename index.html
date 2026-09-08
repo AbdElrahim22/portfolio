@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width,initial-scale=1.0"/>
+  <title>Abd El-Rahim Yousef | Full Stack Developer</title>
+  <meta name="description" content="Full Stack Developer specializing in ASP.NET Core, Angular, React. Building scalable web applications end-to-end."/>
+  <link rel="preconnect" href="https://fonts.googleapis.com"/>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Fira+Code:wght@400;500&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+
+  <!-- NAVBAR -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-logo"><span class="logo-bracket">&lt;</span>AR<span class="logo-bracket">/&gt;</span></div>
+    <ul class="nav-links" id="nav-links">
+      <li><a href="#about"    id="nav-about">About</a></li>
+      <li><a href="#skills"   id="nav-skills">Skills</a></li>
+      <li><a href="#projects" id="nav-projects">Projects</a></li>
+      <li><a href="#contact"  id="nav-contact">Contact</a></li>
+    </ul>
+    <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+
+  <!-- HERO -->
+  <section class="hero" id="home">
+    <div class="hero-bg">
+      <img src="hero_bg.jpg" alt="coding background" class="hero-bg-img"/>
+      <div class="hero-overlay"></div>
+    </div>
+    <div class="code-particles" aria-hidden="true">
+      <span class="cp cp1">ASP.NET</span>
+      <span class="cp cp2">{ }</span>
+      <span class="cp cp3">Angular</span>
+      <span class="cp cp4">C#</span>
+      <span class="cp cp5">React</span>
+      <span class="cp cp6">SQL</span>
+      <span class="cp cp7">JWT</span>
+      <span class="cp cp8">Docker</span>
+    </div>
+    <div class="hero-content">
+      <div class="hero-text">
+        <div class="hero-greeting"><span class="wave">&#128075;</span> Hello, World!</div>
+        <h1 class="hero-title">Hi, I'm <span class="gradient-text">Abd El-Rahim</span><br/><span class="gradient-text-2">Yousef</span></h1>
+        <div class="hero-role"><span class="role-prefix">&gt;_ </span><span id="typewriter"></span><span class="cursor">|</span></div>
+        <p class="hero-bio">Full Stack Developer building scalable web applications end&#8209;to&#8209;end &mdash; from RESTful APIs &amp; clean architecture to modern component&#8209;based frontends. Strong focus on <strong>clean code</strong>, <strong>JWT security</strong>, and <strong>real-world delivery</strong>.</p>
+        <div class="hero-cta">
+          <a href="#contact"  class="btn btn-primary"  id="hero-contact-btn">Contact Me</a>
+          <a href="#projects" class="btn btn-outline"  id="hero-projects-btn">View Projects</a>
+        </div>
+        <div class="hero-stats">
+          <div class="stat"><span class="stat-num">6+</span><span class="stat-label">Projects</span></div>
+          <div class="stat-divider"></div>
+          <div class="stat"><span class="stat-num">2+</span><span class="stat-label">Years Exp</span></div>
+          <div class="stat-divider"></div>
+          <div class="stat"><span class="stat-num">20+</span><span class="stat-label">Technologies</span></div>
+        </div>
+      </div>
+      <div class="hero-visual">
+        <div class="photo-ring">
+          <div class="photo-ring-inner">
+            <img src="profile.png" alt="Abd El-Rahim Yousef" class="profile-photo" id="profile-img"/>
+          </div>
+        </div>
+        <div class="tech-badges">
+          <div class="tech-badge tb-1"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/csharp/csharp-original.svg" alt="C#"/>C#</div>
+          <div class="tech-badge tb-2"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/angularjs/angularjs-original.svg" alt="Angular"/>Angular</div>
+          <div class="tech-badge tb-3"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" alt="React"/>React</div>
+          <div class="tech-badge tb-4"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/dot-net/dot-net-original.svg" alt=".NET"/>.NET</div>
+        </div>
+      </div>
+    </div>
+    <a href="#about" class="scroll-indicator" id="scroll-down">
+      <div class="scroll-mouse"><div class="scroll-wheel"></div></div>
+      <span>Scroll Down</span>
+    </a>
+  </section>
+
+  <!-- ABOUT -->
+  <section class="section about-section" id="about">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">// about me</span>
+        <h2>Who I Am</h2>
+        <p class="section-sub">A passionate developer who loves clean architecture and elegant solutions</p>
+      </div>
+      <div class="about-grid">
+        <div class="about-card glass-card"><div class="about-icon">&#128640;</div><h3>Full Stack</h3><p>End-to-end development from database design to polished UI. I handle everything from RESTful APIs to component-based frontends.</p></div>
+        <div class="about-card glass-card"><div class="about-icon">&#127959;</div><h3>Clean Architecture</h3><p>Strong advocate for Clean Architecture, Onion Architecture, CQRS, and Design Patterns that make codebases maintainable and scalable.</p></div>
+        <div class="about-card glass-card"><div class="about-icon">&#128274;</div><h3>Security First</h3><p>Expert in JWT authentication, ASP.NET Identity, and Role-Based Access Control to build secure production applications.</p></div>
+        <div class="about-card glass-card"><div class="about-icon">&#9889;</div><h3>Fast Learner</h3><p>Shipped production features in Angular and React. Equally comfortable adapting to Vue.js and other modern SPA stacks quickly.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SKILLS -->
+  <section class="section skills-section" id="skills">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">// skills &amp; tools</span>
+        <h2>Tech Stack</h2>
+        <p class="section-sub">Technologies I work with daily to build production-ready applications</p>
+      </div>
+      <div class="skills-grid">
+        <div class="skill-category glass-card"><h3><span class="skill-icon">&#128187;</span> Languages</h3><div class="skill-tags"><span class="skill-tag tier-1">C#</span><span class="skill-tag tier-1">TypeScript</span><span class="skill-tag tier-1">JavaScript</span><span class="skill-tag tier-2">C++</span></div></div>
+        <div class="skill-category glass-card"><h3><span class="skill-icon">&#9881;</span> Backend</h3><div class="skill-tags"><span class="skill-tag tier-1">ASP.NET Core</span><span class="skill-tag tier-1">RESTful APIs</span><span class="skill-tag tier-1">Entity Framework Core</span><span class="skill-tag tier-2">SignalR</span><span class="skill-tag tier-2">RabbitMQ (MassTransit)</span><span class="skill-tag tier-2">Redis</span><span class="skill-tag tier-2">ASP.NET MVC</span></div></div>
+        <div class="skill-category glass-card"><h3><span class="skill-icon">&#127912;</span> Frontend / SPA</h3><div class="skill-tags"><span class="skill-tag tier-1">Angular</span><span class="skill-tag tier-1">React</span><span class="skill-tag tier-1">HTML5 &amp; CSS3</span><span class="skill-tag tier-2">Bootstrap</span><span class="skill-tag tier-2">Tailwind CSS</span><span class="skill-tag tier-2">AJAX</span></div></div>
+        <div class="skill-category glass-card"><h3><span class="skill-icon">&#128274;</span> Auth &amp; Security</h3><div class="skill-tags"><span class="skill-tag tier-1">JWT</span><span class="skill-tag tier-1">ASP.NET Identity</span><span class="skill-tag tier-1">RBAC</span></div></div>
+        <div class="skill-category glass-card"><h3><span class="skill-icon">&#128451;</span> Databases</h3><div class="skill-tags"><span class="skill-tag tier-1">SQL Server</span><span class="skill-tag tier-1">EF Core Code-First</span></div></div>
+        <div class="skill-category glass-card"><h3><span class="skill-icon">&#128208;</span> Architecture</h3><div class="skill-tags"><span class="skill-tag tier-1">Clean Architecture</span><span class="skill-tag tier-1">CQRS / MediatR</span><span class="skill-tag tier-2">Onion Architecture</span><span class="skill-tag tier-2">Microservices</span><span class="skill-tag tier-2">Design Patterns</span></div></div>
+        <div class="skill-category glass-card"><h3><span class="skill-icon">&#128295;</span> Tools &amp; DevOps</h3><div class="skill-tags"><span class="skill-tag tier-1">Git &amp; GitHub</span><span class="skill-tag tier-1">Docker</span><span class="skill-tag tier-2">GitHub Actions CI/CD</span><span class="skill-tag tier-2">Swagger</span><span class="skill-tag tier-2">Visual Studio</span></div></div>
+        <div class="skill-category glass-card"><h3><span class="skill-icon">&#129504;</span> Soft Skills</h3><div class="skill-tags"><span class="skill-tag soft">Communication</span><span class="skill-tag soft">Time Management</span><span class="skill-tag soft">Critical Thinking</span><span class="skill-tag soft">Self-Learning</span><span class="skill-tag soft">Problem Solving</span></div></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROJECTS -->
+  <section class="section projects-section" id="projects">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">// my work</span>
+        <h2>Featured Projects</h2>
+        <p class="section-sub">Real-world applications built end-to-end with clean architecture and production quality</p>
+      </div>
+      <div class="projects-grid">
+
+        <div class="project-card glass-card" id="project-mustabshiran">
+          <div class="project-header">
+            <div class="project-icon">&#128302;</div>
+            <div class="project-links">
+              <a href="https://github.com/AbdElrahim22/mustabshiran-backend" target="_blank" rel="noopener" class="proj-link" title="GitHub">&#9775;</a>
+              <a href="https://mustabshiran-frontend.vercel.app" target="_blank" rel="noopener" class="proj-link proj-live" title="Live Demo">&#8599;</a>
+            </div>
+          </div>
+          <h3 class="project-title">Mustabshiran Platform</h3>
+          <p class="project-desc">A full-stack prediction/forecasting platform with a modern React/TypeScript frontend deployed on Vercel and a robust ASP.NET Core backend. Features clean architecture and RESTful API design.</p>
+          <div class="project-tech"><span>ASP.NET Core</span><span>React</span><span>TypeScript</span><span>SQL Server</span><span>EF Core</span></div>
+          <div class="project-status live">&#127866; Live</div>
+        </div>
+
+        <div class="project-card glass-card" id="project-pharmacy">
+          <div class="project-header">
+            <div class="project-icon">&#128138;</div>
+            <div class="project-links">
+              <a href="https://github.com/AbdElrahim22/Pharmacy-backend" target="_blank" rel="noopener" class="proj-link" title="Backend GitHub">&#9775;</a>
+              <a href="https://github.com/AbdElrahim22/Pharmacy-Frontend" target="_blank" rel="noopener" class="proj-link" title="Frontend GitHub">&#8599;</a>
+            </div>
+          </div>
+          <h3 class="project-title">Pharmacy Management System</h3>
+          <p class="project-desc">A complete pharmacy management system with full-stack implementation. ASP.NET Core backend handling inventory, prescriptions, and sales. Angular frontend for a clean and responsive UI with JWT auth.</p>
+          <div class="project-tech"><span>ASP.NET Core</span><span>C#</span><span>Angular</span><span>TypeScript</span><span>SQL Server</span><span>JWT</span></div>
+          <div class="project-status wip">&#128309; Full Stack</div>
+        </div>
+
+        <div class="project-card glass-card" id="project-manisik">
+          <div class="project-header">
+            <div class="project-icon">&#127968;</div>
+            <div class="project-links">
+              <a href="https://github.com/AbdElrahim22/Manisik-Backend" target="_blank" rel="noopener" class="proj-link" title="GitHub">&#9775;</a>
+            </div>
+          </div>
+          <h3 class="project-title">Manisik &mdash; Real Estate Platform</h3>
+          <p class="project-desc">A real estate listing and management platform built with Angular frontend and ASP.NET Core backend. Supports property listings, search, user authentication, and role-based dashboards.</p>
+          <div class="project-tech"><span>ASP.NET Core</span><span>C#</span><span>Angular</span><span>EF Core</span><span>SQL Server</span><span>RBAC</span></div>
+          <div class="project-status wip">&#128309; Full Stack</div>
+        </div>
+
+        <div class="project-card glass-card" id="project-social">
+          <div class="project-header">
+            <div class="project-icon">&#128241;</div>
+            <div class="project-links">
+              <a href="https://github.com/AbdElrahim22/SocialMediaWebsite" target="_blank" rel="noopener" class="proj-link" title="GitHub">&#9775;</a>
+            </div>
+          </div>
+          <h3 class="project-title">Social Media Web App</h3>
+          <p class="project-desc">A feature-rich social media web application with posts, follows, real-time interactions, and user profiles. Built with modern HTML/CSS/JS and a dynamic, fully responsive interface.</p>
+          <div class="project-tech"><span>HTML5</span><span>CSS3</span><span>JavaScript</span><span>Bootstrap</span></div>
+          <div class="project-status frontend">&#128993; Frontend</div>
+        </div>
+
+        <div class="project-card glass-card" id="project-loganalyzer">
+          <div class="project-header">
+            <div class="project-icon">&#128202;</div>
+            <div class="project-links">
+              <a href="https://github.com/AbdElrahim22/LogAnalyzer" target="_blank" rel="noopener" class="proj-link" title="GitHub">&#9775;</a>
+            </div>
+          </div>
+          <h3 class="project-title">High-Performance Log Analyzer</h3>
+          <p class="project-desc">High-performance C# log file analyzer using memory-mapped files and parallel chunk processing. Demonstrates advanced C# capabilities for system-level performance optimization at scale.</p>
+          <div class="project-tech"><span>C#</span><span>Memory-Mapped Files</span><span>Parallel Processing</span><span>.NET</span></div>
+          <div class="project-status perf">&#9889; Performance</div>
+        </div>
+
+        <div class="project-card glass-card" id="project-driver">
+          <div class="project-header">
+            <div class="project-icon">&#128663;</div>
+            <div class="project-links">
+              <a href="https://github.com/AbdElrahim22" target="_blank" rel="noopener" class="proj-link" title="GitHub">&#9775;</a>
+            </div>
+          </div>
+          <h3 class="project-title">Driver Management System</h3>
+          <p class="project-desc">A comprehensive driver and fleet management system with ASP.NET Core backend, Angular mobile app, and role-based access control. Real-time tracking via SignalR and JWT-secured APIs.</p>
+          <div class="project-tech"><span>ASP.NET Core</span><span>Angular</span><span>SignalR</span><span>JWT</span><span>SQL Server</span><span>Docker</span></div>
+          <div class="project-status inprog">&#128309; In Progress</div>
+        </div>
+
+      </div>
+      <div class="projects-cta">
+        <a href="https://github.com/AbdElrahim22" target="_blank" rel="noopener" class="btn btn-primary" id="github-all-btn">View All on GitHub</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section class="section contact-section" id="contact">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">// get in touch</span>
+        <h2>Let's Work Together</h2>
+        <p class="section-sub">Have a project in mind or want to hire me? Drop a message!</p>
+      </div>
+      <div class="contact-wrapper">
+        <div class="contact-info">
+          <div class="contact-card glass-card" id="contact-email-card">
+            <div class="contact-icon">&#128231;</div>
+            <div><p class="contact-label">Email</p><a href="mailto:abdelrahim.yousef203060@gmail.com" class="contact-value">abdelrahim.yousef203060@gmail.com</a></div>
+          </div>
+          <div class="contact-card glass-card" id="contact-linkedin-card">
+            <div class="contact-icon">&#128188;</div>
+            <div><p class="contact-label">LinkedIn</p><a href="https://www.linkedin.com/in/abdel-rahim-yousef-46414b282" target="_blank" rel="noopener" class="contact-value">abdel-rahim-yousef</a></div>
+          </div>
+          <div class="contact-card glass-card" id="contact-github-card">
+            <div class="contact-icon">&#128025;</div>
+            <div><p class="contact-label">GitHub</p><a href="https://github.com/AbdElrahim22" target="_blank" rel="noopener" class="contact-value">@AbdElrahim22</a></div>
+          </div>
+          <div class="contact-card glass-card" id="contact-location-card">
+            <div class="contact-icon">&#128205;</div>
+            <div><p class="contact-label">Location</p><span class="contact-value">Egypt &#127467;&#127468;</span></div>
+          </div>
+        </div>
+        <form class="contact-form glass-card" id="contact-form" onsubmit="handleSubmit(event)">
+          <div class="form-group"><label for="fname">Your Name</label><input type="text" id="fname" name="name" placeholder="John Doe" required/></div>
+          <div class="form-group"><label for="femail">Your Email</label><input type="email" id="femail" name="email" placeholder="john@example.com" required/></div>
+          <div class="form-group"><label for="fsubject">Subject</label><input type="text" id="fsubject" name="subject" placeholder="Project Collaboration" required/></div>
+          <div class="form-group"><label for="fmessage">Message</label><textarea id="fmessage" name="message" rows="5" placeholder="Tell me about your project..." required></textarea></div>
+          <button type="submit" class="btn btn-primary full-width" id="submit-btn"><span>Send Message &#8594;</span></button>
+          <div class="form-success" id="form-success">&#9989; Message sent! I'll get back to you soon.</div>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-logo"><span class="logo-bracket">&lt;</span>AR<span class="logo-bracket">/&gt;</span></div>
+        <p class="footer-text">Built with &#10084;&#65039; by Abd El-Rahim Yousef</p>
+        <div class="footer-socials">
+          <a href="https://github.com/AbdElrahim22" target="_blank" rel="noopener" id="footer-github" aria-label="GitHub" class="social-btn">GH</a>
+          <a href="https://www.linkedin.com/in/abdel-rahim-yousef-46414b282" target="_blank" rel="noopener" id="footer-linkedin" aria-label="LinkedIn" class="social-btn">in</a>
+          <a href="mailto:abdelrahim.yousef203060@gmail.com" id="footer-email" aria-label="Email" class="social-btn">&#9993;</a>
+        </div>
+      </div>
+      <p class="footer-copy">&copy; 2026 Abd El-Rahim Yousef &mdash; All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
