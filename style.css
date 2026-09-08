@@ -159,16 +159,20 @@ ul{list-style:none}
 .project-card:hover::before{opacity:1}
 .project-header{display:flex;justify-content:space-between;align-items:flex-start;margin-bottom:16px}
 .project-icon{font-size:2rem}
-.project-links{display:flex;gap:10px}
-.proj-link{width:36px;height:36px;border-radius:50%;background:var(--surface-hover);border:1px solid var(--border);display:flex;align-items:center;justify-content:center;font-size:1.1rem;color:var(--muted);transition:var(--transition);text-decoration:none}
-.proj-link:hover{background:rgba(79,143,255,.2);border-color:var(--blue);color:var(--blue);transform:scale(1.1)}
-.proj-link.proj-live:hover{background:rgba(34,197,94,.2);border-color:var(--green);color:var(--green)}
+.project-links{display:flex;gap:8px;align-items:center}
+.proj-link{width:36px;height:36px;border-radius:50%;background:rgba(255,255,255,.05);border:1px solid var(--border);display:flex;align-items:center;justify-content:center;color:var(--muted);transition:var(--transition);text-decoration:none}
+.proj-link svg{display:block;transition:transform .2s ease}
+.proj-link:hover{transform:translateY(-2px) scale(1.1)}
+.proj-link.proj-github:hover{background:rgba(255,255,255,.12);border-color:#fff;color:#fff;box-shadow:0 4px 14px rgba(255,255,255,.15)}
+.proj-link.proj-video:hover{background:rgba(10,102,194,.25);border-color:#0a66c2;color:#38bdf8;box-shadow:0 4px 14px rgba(10,102,194,.35)}
+.proj-link.proj-live:hover{background:rgba(34,197,94,.25);border-color:var(--green);color:var(--green);box-shadow:0 4px 14px rgba(34,197,94,.35)}
 .project-title{font-size:1.15rem;font-weight:700;margin-bottom:10px;color:var(--text)}
 .project-desc{color:var(--muted);font-size:.88rem;line-height:1.7;margin-bottom:16px}
 .project-tech{display:flex;flex-wrap:wrap;gap:6px;margin-bottom:16px}
 .project-tech span{padding:4px 10px;background:rgba(79,143,255,.1);border:1px solid rgba(79,143,255,.2);border-radius:4px;font-size:.72rem;color:var(--blue);font-weight:500;font-family:'Fira Code',monospace}
-.project-status{font-size:.75rem;font-weight:700;padding:4px 12px;border-radius:50px;display:inline-block}
-.project-status.live{background:rgba(34,197,94,.15);color:var(--green);border:1px solid rgba(34,197,94,.3)}
+.project-status{font-size:.75rem;font-weight:700;padding:5px 14px;border-radius:50px;display:inline-flex;align-items:center;gap:6px;text-decoration:none}
+.project-status.live{background:rgba(34,197,94,.15);color:var(--green);border:1px solid rgba(34,197,94,.3);transition:var(--transition);cursor:pointer}
+a.project-status.live:hover{background:rgba(34,197,94,.3);border-color:var(--green);color:#4ade80;transform:translateY(-2px);box-shadow:0 4px 14px rgba(34,197,94,.3)}
 .project-status.wip{background:rgba(79,143,255,.15);color:var(--blue);border:1px solid rgba(79,143,255,.3)}
 .project-status.frontend{background:rgba(234,179,8,.15);color:#eab308;border:1px solid rgba(234,179,8,.3)}
 .project-status.perf{background:rgba(6,182,212,.15);color:var(--cyan);border:1px solid rgba(6,182,212,.3)}
