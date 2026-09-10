@@ -69,26 +69,11 @@ const observer = new IntersectionObserver((entries) => {
 }, { threshold: 0.12 });
 
 document.querySelectorAll(
-  '.about-card, .skill-category, .project-card, .contact-card, .contact-form'
+  '.about-card, .skill-category, .project-card, .contact-card'
 ).forEach(el => {
   el.classList.add('reveal');
   observer.observe(el);
 });
-
-// ── CONTACT FORM ───────────────────────────
-function handleSubmit(e) {
-  e.preventDefault();
-  const btn     = document.getElementById('submit-btn');
-  const success = document.getElementById('form-success');
-  btn.disabled  = true;
-  btn.innerHTML = '<span>Sending...</span>';
-  setTimeout(() => {
-    success.classList.add('show');
-    btn.innerHTML = '<span>Sent! ✓</span>';
-    btn.style.background = 'linear-gradient(135deg,#22c55e,#16a34a)';
-    e.target.reset();
-  }, 1000);
-}
 
 // ── STAT COUNTER ───────────────────────────
 function animateCounters() {

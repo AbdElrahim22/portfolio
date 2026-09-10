@@ -100,8 +100,7 @@ ul{list-style:none}
 .stat-label{font-size:.75rem;color:var(--muted);text-transform:uppercase;letter-spacing:.1em;margin-top:4px}
 .stat-divider{width:1px;height:40px;background:var(--border)}
 .hero-visual{flex-shrink:0;position:relative;width:340px;height:340px;display:flex;align-items:center;justify-content:center}
-.photo-ring{width:300px;height:300px;border-radius:50%;padding:3px;background:var(--grad1);animation:ring-rotate 6s linear infinite;box-shadow:0 0 60px rgba(79,143,255,.35)}
-@keyframes ring-rotate{from{filter:hue-rotate(0deg)}to{filter:hue-rotate(360deg)}}
+.photo-ring{width:300px;height:300px;border-radius:50%;padding:3px;background:var(--grad1);box-shadow:0 0 50px rgba(79,143,255,.3)}
 .photo-ring-inner{width:100%;height:100%;border-radius:50%;overflow:hidden;border:4px solid var(--bg)}
 .profile-photo{width:100%;height:100%;object-fit:cover;object-position:top}
 .tech-badges{position:absolute;inset:0;pointer-events:none}
@@ -181,23 +180,17 @@ a.project-status.live:hover{background:rgba(34,197,94,.3);border-color:var(--gre
 
 /* ── CONTACT ──────────────────────────────────────── */
 .contact-section{background:var(--bg)}
-.contact-wrapper{display:grid;grid-template-columns:1fr 1.4fr;gap:32px;align-items:start}
-.contact-info{display:flex;flex-direction:column;gap:16px}
-.contact-card{display:flex;align-items:center;gap:16px;padding:20px 24px;transition:var(--transition)}
-.contact-card:hover{transform:translateX(4px);border-color:rgba(79,143,255,.3);box-shadow:var(--shadow)}
-.contact-icon{font-size:1.8rem;width:48px;text-align:center}
+.contact-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:24px;max-width:860px;margin:0 auto}
+.contact-card{display:flex;align-items:center;gap:20px;padding:24px 28px;transition:var(--transition);text-decoration:none;position:relative;overflow:hidden}
+.contact-card::before{content:'';position:absolute;top:0;left:0;right:0;height:2px;background:var(--grad1);opacity:0;transition:var(--transition)}
+.contact-card:hover{transform:translateY(-6px);border-color:rgba(79,143,255,.35);box-shadow:0 16px 40px rgba(79,143,255,.12)}
+.contact-card:hover::before{opacity:1}
+.contact-icon{font-size:1.9rem;width:52px;height:52px;border-radius:14px;background:rgba(255,255,255,.04);border:1px solid var(--border);display:flex;align-items:center;justify-content:center;flex-shrink:0;transition:var(--transition)}
+.contact-card:hover .contact-icon{background:rgba(79,143,255,.12);border-color:rgba(79,143,255,.3);transform:scale(1.08)}
+.contact-details{display:flex;flex-direction:column;min-width:0}
 .contact-label{font-size:.75rem;color:var(--muted);text-transform:uppercase;letter-spacing:.1em;margin-bottom:4px}
-.contact-value{font-size:.9rem;color:var(--text);font-weight:500;word-break:break-all;transition:var(--transition)}
-a.contact-value:hover{color:var(--blue)}
-.contact-form{padding:36px;display:flex;flex-direction:column;gap:20px}
-.form-group{display:flex;flex-direction:column;gap:8px}
-.form-group label{font-size:.85rem;font-weight:600;color:var(--muted);text-transform:uppercase;letter-spacing:.05em}
-.form-group input,.form-group textarea{background:rgba(255,255,255,.04);border:1px solid var(--border);border-radius:var(--radius-sm);padding:14px 18px;color:var(--text);font-family:'Inter',sans-serif;font-size:.95rem;outline:none;transition:var(--transition);resize:vertical}
-.form-group input::placeholder,.form-group textarea::placeholder{color:rgba(136,146,164,.5)}
-.form-group input:focus,.form-group textarea:focus{border-color:var(--blue);background:rgba(79,143,255,.06);box-shadow:0 0 0 3px rgba(79,143,255,.12)}
-.form-success{display:none;text-align:center;color:var(--green);font-weight:600;padding:12px;border-radius:var(--radius-sm);background:rgba(34,197,94,.1);border:1px solid rgba(34,197,94,.2)}
-.form-success.show{display:block;animation:fade-in .4s ease}
-@keyframes fade-in{from{opacity:0;transform:translateY(-8px)}to{opacity:1;transform:none}}
+.contact-value{font-size:.92rem;color:var(--text);font-weight:500;word-break:break-all;transition:var(--transition)}
+.contact-card:hover .contact-value{color:var(--blue)}
 
 /* ── FOOTER ───────────────────────────────────────── */
 .footer{background:rgba(0,0,0,.5);border-top:1px solid var(--border);padding:48px 0 24px}
@@ -223,7 +216,7 @@ a.contact-value:hover{color:var(--blue)}
   .tb-4{left:-30px}
   .hero-cta{justify-content:center}
   .hero-stats{justify-content:center}
-  .contact-wrapper{grid-template-columns:1fr}
+  .contact-grid{grid-template-columns:1fr;max-width:480px}
   .navbar{padding:0 24px}
   .nav-links{display:none;flex-direction:column;position:absolute;top:var(--nav-h);left:0;right:0;background:rgba(5,5,16,.97);padding:24px;gap:0;border-bottom:1px solid var(--border)}
   .nav-links.open{display:flex}
